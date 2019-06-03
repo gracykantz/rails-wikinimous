@@ -19,9 +19,7 @@ class ArticlesController < ApplicationController
 
   def edit
   end
-def restaurant_params
-    params.require(:restaurant).permit(:name, :address, :stars)
-  end
+
   def update
     @article.update(user_params)
     redirect_to article_path
